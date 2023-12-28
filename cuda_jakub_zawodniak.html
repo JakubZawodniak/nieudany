@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pl"> 
+<head>
+<title>7 cudów</title>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="logo">
+7 Cudownych Bokserów
+</div>
+
+<div class="topnav" id="myTopnav">
+  <a href="cuda_jakub_zawodniak.html" class="active">Informacje ogólne</a>
+  <a href="tyson.html">Tyson</a>
+  <a href="liston.html">Liston</a>
+  <a href="ali.html">Ali</a>
+  <a href="marciano.html">Marciano</a>
+  <a href="masternak.html">Masternak</a>
+  <a href="duran.html">Duran</a>
+  <a href="canelo.html">Canelo</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<!-- <div class="menugora">
+Informacje ogólne
+Tyson
+Liston
+Ali
+Marciano
+Masternak
+Duran
+Canelo
+</div> -->
+
+<div class="menulewe">
+<ol><br>
+<li><a href="https://pl.wikipedia.org/wiki/Mike_Tyson" target="_blank" class="menu">Mike Tyson</a></li><br>
+<li><a href="https://pl.wikipedia.org/wiki/Sonny_Liston" target="_blank" class="menu">Sonny Liston</a></li><br>
+<li><a href="https://pl.wikipedia.org/wiki/Muhammad_Ali_(ameryka%C5%84ski_bokser)" target="_blank" class="menu">Muhammad Ali</a></li><br>
+<li><a href="https://pl.wikipedia.org/wiki/Rocky_Marciano" target="_blank" class="menu">Rocky Marciano</a></li><br>
+<li><a href="https://pl.wikipedia.org/wiki/Mateusz_Masternak" target="_blank" class="menu">Mateusz Masternak</a></li><br>
+<li><a href="https://pl.wikipedia.org/wiki/Roberto_Dur%C3%A1n" target="_blank" class="menu">Roberto Duran</a></li><br>
+<li><a href="https://pl.wikipedia.org/wiki/Sa%C3%BAl_%C3%81lvarez" target="_blank" class="menu">Saul "Canelo" Alvarez</a></li>
+</ol>
+</div>
+
+
+
+<div class="tresc1">
+<h2>Galeria zdjęć (naciśnij na dowolne zdjęcie):</a></h2>
+<div class="galeria">
+<div class="row">
+  <div class="column img1">
+    <img src="multimedia/tyson.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="multimedia/liston.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow img2">
+  </div>
+  <div class="column">
+    <img src="multimedia/ali.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow img2">
+  </div>
+  <div class="column">
+    <img src="multimedia/marciano.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow img2">
+  </div>
+  <div class="column">
+    <img src="multimedia/masternak.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow img2">
+  </div>
+  <div class="column">
+    <img src="multimedia/duran.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow img2">
+  </div>
+  <div class="column">
+    <img src="multimedia/canelo.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow img2">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+     <div class="mySlides">
+      <div class="numbertext">1 / 7</div>
+      <img src="multimedia/tyson_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 7</div>
+      <img src="multimedia/liston_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 7</div>
+      <img src="multimedia/ali_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 7</div>
+      <img src="multimedia/marciano_wide.jpg" style="width:100%">
+	  </div>
+	<div class="mySlides">
+      <div class="numbertext">5 / 7</div>
+      <img src="multimedia/masternak_wide.jpg" style="width:100%">
+	  </div>
+	<div class="mySlides">
+      <div class="numbertext">6 / 7</div>
+      <img src="multimedia/duran_wide.jpg" style="width:100%">
+	  </div>
+	<div class="mySlides">
+      <div class="numbertext">7 / 7</div>
+      <img src="multimedia/canelo_wide.jpg" style="width:100%">
+	  </div>
+	  </div> 
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo img2" src="multimedia/tyson.jpg" onclick="currentSlide(1)" alt="Mike Tyson">
+    </div>
+
+    <div class="column">
+      <img class="demo img2" src="multimedia/liston.jpg" onclick="currentSlide(2)" alt="Sonny Liston">
+    </div>
+
+    <div class="column">
+      <img class="demo img2" src="multimedia/ali.jpg" onclick="currentSlide(3)" alt="Muhammmad Ali">
+    </div>
+
+    <div class="column">
+      <img class="demo img2" src="multimedia/marciano.jpg" onclick="currentSlide(4)" alt="Rocky Marciano">
+    </div>
+	<div class="column">
+      <img class="demo img2" src="multimedia/masternak.jpg" onclick="currentSlide(5)" alt="Mateusz Masternak">
+    </div>
+	<div class="column">
+      <img class="demo img2" src="multimedia/duran.jpg" onclick="currentSlide(6)" alt="Roberto Duran">
+    </div>
+	<div class="column">
+      <img class="demo img2" src="multimedia/canelo.jpg" onclick="currentSlide(7)" alt="Canelo">
+    </div>
+  </div>
+</div>
+
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<br><br>
+<table>
+<tr>
+<th>Bokser</th>
+<th>Rok zdobycia 1-szego pasa mistrza świata</th><br>
+<th>Kategoria wagowa</th>
+</tr>
+<tr>
+<td>Tyson</td>
+<td>1986</td>
+<td>Ciężka</td>
+</tr>
+<tr>
+<td>Liston</td>
+<td>1962</td>
+<td>Ciężka</td>
+</tr>
+<tr>
+<td>Ali</td>
+<td>1964</td>
+<td>Ciężka</td>
+</tr>
+<tr>
+<td>Marciano</td>
+<td>1951</td>
+<td>Ciężka</td>
+</tr>
+<tr>
+<td>Masternak</td>
+<td>2008 (młodzieżowy)</td>
+<td>Junior ciężka</td>
+</tr>
+<tr>
+<td>Duran</td>
+<td>1972</td>
+<td>Lekka, potem: półśrednia, lekkośrednia, średnia</td>
+</tr>
+<tr>
+<td>Canelo</td>
+<td>2011</td>
+<td>Lekkośrednia, potem:  średnia, super średnia, półciężka</td>
+</tr>
+</table><br><br>
+
+<h2 class="niebieski">Formularz:</h2>
+<form action="mailto:zawodniakjakub124@gmail.com" method=post>
+<h3>Dane:<h3>
+<label for=imie>Imię:</label><input type=text id=imie name=imie maxlength=16 size=16><br>
+<label for=wiek>Ile masz lat?</label><input type=number id=wiek name=wiek min=13 max=99><br> 
+<h3>Płeć:</h3>
+<input type=radio name=plec id=kobieta value=kobieta><label for=kobieta>Kobieta</label><br>
+<input type=radio name=plec id=mezczyzna value=mezczyzna><label for=mezczyzna>Mężczyzna</label><br> 
+<h3>Jakiego pięściarza znał*ś?:</h3>
+<input type=checkbox name=znany id=tyson value=tyson><label for=tyson>Mike Tyson</label><br>
+<input type=checkbox name=znany id=liston value=liston><label for=liston>Sonny Liston</label><br>
+<input type=checkbox name=znany id=ali value=ali><label for=ali>Muhammad Ali</label><br>
+<input type=checkbox name=znany id=marciano value=marciano><label for=marciano>Rocky Marciano</label><br>
+<input type=checkbox name=znany id=masternak value=masternak><label for=masternak>Mateusz Masternak</label><br>
+<input type=checkbox name=znany id=duran value=duran><label for=duran>Roberto Duran</label><br>
+<input type=checkbox name=znany id=canelo value=canelo><label for=canelo>Canelo</label><br>
+ 
+<h3>Jaki jest twój ulubiony bokser (z wymienionych na stronie)?</h3>
+<select name=ulubiony id=ulubiony>
+<option value=mt selected>Tyson</option>
+<option value=sl>Liston</option>
+<option value=ma>Ali</option>
+<option value=rm>Marciano</option>
+<option value=mm>Masternak</option>
+<option value=rd>Duran</option>
+<option value=sca>Canelo</option>
+<option value=inny>Inny</option>
+</select><br><br>
+
+<label for=tekst>Propozycje:</label><br>
+<textarea name=tekst id=tekst cols=16 rows=10 maxlength=50>Napisz mi jakiego boksera umieścić na stronie</textarea><br> 
+<input type=reset value="Wyczyść">
+<input type=submit value="Wyślij">
+</form>
+</div>
+
+
+
+<div class="stopka">
+Jakub Zawodniak 2ta
+</div>
+
+
+
+
+
+</body>
+</html>
